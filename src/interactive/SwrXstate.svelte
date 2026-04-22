@@ -28,7 +28,7 @@
     return new Promise((resolve, reject) => {
       if (fetchSuccess) {
         // Increment counter to make it a unique URL.
-        let url = `https://source.unsplash.com/random/200x200?q=${counter++}`;
+        let url = `https://picsum.photos/seed/swrxstate-${counter++}/200/200`;
         setTimeout(() => resolve(url), fetchDelay);
       } else {
         setTimeout(() => reject(new Error('Fetch failed!')), fetchDelay);
